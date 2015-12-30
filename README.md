@@ -6,6 +6,9 @@ Fluid2D Blur Post Processing Effect for Unity
 Fluid2D algorithm in this Project is ported from GPU-Fluid-Experiments.  
 https://github.com/haxiomic/GPU-Fluid-Experiments
 
+Blur Post Processing Effect in this Project:
+https://github.com/nobnak/SmokeBlur
+
 # Usage
 Add Fluid2DBlur.cs to your camera. And also please set camera ClearFlags to Solid Color.
 
