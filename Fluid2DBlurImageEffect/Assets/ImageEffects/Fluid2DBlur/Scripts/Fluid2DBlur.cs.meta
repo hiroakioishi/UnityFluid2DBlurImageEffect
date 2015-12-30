@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 9e74c1e19119046edb8f1abcd0358632
+timeCreated: 1451481921
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - _advectShader: {fileID: 4800000, guid: 33e0cd26dfdcc4bcda08eb96dc45ce73, type: 3}
+  - _divergenceShader: {fileID: 4800000, guid: 128968673999a4264a3a39714288de63, type: 3}
+  - _pressureSolveShader: {fileID: 4800000, guid: 42a4f2e2ea12c499e971be5629a47673,
+      type: 3}
+  - _pressureGradientSubstractShader: {fileID: 4800000, guid: 8854fa981500a4468949ee85febc1ad4,
+      type: 3}
+  - _applyForceShader: {fileID: 4800000, guid: 308d37780250c483d8432cffe23fa755, type: 3}
+  - _applyForceByScreenBrightnessShader: {fileID: 4800000, guid: a3be2521bd8744ed59b6852e242715f9,
+      type: 3}
+  - _fluidBlurShader: {fileID: 4800000, guid: ad300f7c755ec4f05b5e6366544d978a, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
