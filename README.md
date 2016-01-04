@@ -3,6 +3,9 @@ Fluid2D Blur Post Processing Effect for Unity
 
 ![screenShot](https://github.com/hiroakioishi/UnityFluid2DBlurImageEffect/blob/master/screenShot.png)
 
+Demo  
+https://vimeo.com/150463085  
+
 Fluid2D algorithm in this Project is ported from GPU-Fluid-Experiments.  
 https://github.com/haxiomic/GPU-Fluid-Experiments
 
