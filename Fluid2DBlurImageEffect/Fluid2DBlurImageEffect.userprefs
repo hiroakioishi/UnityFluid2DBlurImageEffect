@@ -1,14 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ImageEffects/Fluid2DBlur/Shaders/FluidBlur.shader">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Sample/Mover.cs">
     <Files>
-      <File FileName="Assets/ImageEffects/Fluid2DBlur/Scripts/Fluid2DBlur.cs" Line="18" Column="35" />
-      <File FileName="Assets/ImageEffects/Fluid2DBlur/Shaders/Advect.shader" Line="1" Column="1" />
-      <File FileName="Assets/ImageEffects/Fluid2DBlur/Shaders/ApplyForce.shader" Line="1" Column="1" />
-      <File FileName="Assets/ImageEffects/Fluid2DBlur/Shaders/ApplyForceByScreenBightness.shader" Line="1" Column="1" />
-      <File FileName="Assets/ImageEffects/Fluid2DBlur/Shaders/PressureGradientSubtract.shader" Line="1" Column="1" />
-      <File FileName="Assets/Sample/Mover.cs" Line="12" Column="56" />
-      <File FileName="Assets/ImageEffects/Fluid2DBlur/Shaders/FluidBlur.shader" Line="1" Column="38" />
+      <File FileName="Assets/Sample/Mover.cs" Line="21" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

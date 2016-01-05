@@ -28,7 +28,7 @@
 	float4 frag_accumulation (v2f_img i) : SV_Target
 	{
 		fixed4 c = tex2D(_MainTex, i.uv);
-		return float4(c.rgb, c.a * 1.1);// * _Accum);	
+		return float4(c.rgb, c.a * _Accum);	
 	}
 	
 	// Blur
