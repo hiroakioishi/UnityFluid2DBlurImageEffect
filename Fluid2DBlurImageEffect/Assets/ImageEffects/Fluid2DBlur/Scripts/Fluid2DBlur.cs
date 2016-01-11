@@ -151,7 +151,7 @@ namespace irishoak.ImageEffects {
 			m.SetMatrix ("_BlurMat", _blurMat);
 			
 			_screenBuffer [0].DiscardContents ();
-			Graphics.Blit(_screenBuffer [0], _screenBuffer [1], m, PASS_BLUR);
+			Graphics.Blit(_screenBuffer [0], _screenBuffer [1], m, PASS_ATTEN);
 			_swapBuffer (_screenBuffer);
 
 			m.SetTexture ("_VelocityMap", GetFlowVelocityFieldTex ());

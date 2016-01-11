@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Sample/Mover.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ImageEffects/Fluid2DBlur/Shaders/FluidBlur.shader">
     <Files>
-      <File FileName="Assets/Sample/Mover.cs" Line="21" Column="26" />
+      <File FileName="Assets/Sample/Mover.cs" Line="1" Column="1" />
+      <File FileName="Assets/ImageEffects/Fluid2DBlur/Shaders/FluidBlur.shader" Line="34" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
