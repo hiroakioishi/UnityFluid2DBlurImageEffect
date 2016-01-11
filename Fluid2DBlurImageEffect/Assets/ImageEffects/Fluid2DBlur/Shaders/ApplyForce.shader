@@ -90,7 +90,7 @@
 			Fog { Mode off }
 			CGPROGRAM
 			#pragma target 3.0
-			#pragma glsl
+			//#pragma glsl
 			#pragma vertex   vert_img
 			#pragma fragment frag
 			ENDCG

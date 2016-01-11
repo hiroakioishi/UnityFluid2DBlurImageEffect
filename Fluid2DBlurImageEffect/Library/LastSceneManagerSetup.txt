@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Sample/Fluid2DBlur.unity
+  isLoaded: 1
+  isActive: 1

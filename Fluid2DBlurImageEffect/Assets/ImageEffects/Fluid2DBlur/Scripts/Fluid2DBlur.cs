@@ -119,11 +119,7 @@ namespace irishoak.ImageEffects {
 			if (Input.GetMouseButtonUp (0)) {
 				_isLeftMouseButtonDown = false;
 			}
-			
-			if (Input.GetKeyUp ("r")) {
-				_resetBuffers ();
-			}
-			
+
 			Step (Time.deltaTime * 0.5f);
 			
 		}
@@ -171,7 +167,7 @@ namespace irishoak.ImageEffects {
 			Graphics.Blit (_screenBuffer [0], dest);
 
 		}
-		
+
 		void OnDestroy () {
 			
 			_destroyBuffers ();
@@ -246,7 +242,7 @@ namespace irishoak.ImageEffects {
 			_applyForceMat.SetFloat ("_Dt", dt_);
 			_applyForceMat.SetFloat ("_Dx", _fluidSimSizeWidth);
 			if (_isEnableMouseToApplyForce) {
-				_applyForceMat.SetInt    ("_IsMouseDown",       _isLeftMouseButtonDown ? 1 : 0);
+				_applyForceMat.SetFloat  ("_IsMouseDown",        _isLeftMouseButtonDown ? 1 : 0);
 				_applyForceMat.SetVector ("_MouseClipSpace",     _currentMousePosition);
 				_applyForceMat.SetVector ("_LastMouseClipSpace", _previousMousePosition);
 			}
@@ -363,53 +359,53 @@ namespace irishoak.ImageEffects {
 		void _createBuffer (ref RenderTexture[] rt_, int bufferWidth_, int bufferHeight_) {
 			
 			rt_ = new RenderTexture[2];
-			rt_ [0] = new RenderTexture (bufferWidth_, bufferHeight_, 0, RenderTextureFormat.ARGBHalf);
+			rt_ [0] = new RenderTexture (bufferWidth_, bufferHeight_, 0, RenderTextureFormat.ARGBHalf, RenderTextureReadWrite.Linear);
 			rt_ [0].filterMode = FilterMode.Bilinear;
 			rt_ [0].wrapMode   = TextureWrapMode.Clamp;
 			rt_ [0].hideFlags  = HideFlags.DontSave;
 			rt_ [0].Create ();
-			Graphics.SetRenderTarget (rt_ [0]);
+			RenderTexture.active = rt_ [0];
 			GL.Clear (false, true, new Color (0,0,0,0));
-			Graphics.SetRenderTarget (null);
-			rt_ [1] = new RenderTexture (bufferWidth_, bufferHeight_, 0, RenderTextureFormat.ARGBHalf);
+			RenderTexture.active = null;
+			rt_ [1] = new RenderTexture (bufferWidth_, bufferHeight_, 0, RenderTextureFormat.ARGBHalf, RenderTextureReadWrite.Linear);
 			rt_ [1].filterMode = FilterMode.Bilinear;
 			rt_ [1].wrapMode   = TextureWrapMode.Clamp;
 			rt_ [1].hideFlags  = HideFlags.DontSave;
 			rt_ [1].Create ();
-			Graphics.SetRenderTarget (rt_ [1]);
+			RenderTexture.active = rt_ [1];
 			GL.Clear (false, true, new Color (0,0,0,0));
-			Graphics.SetRenderTarget (null);
+			RenderTexture.active = null;
 		}
 		
 		void _createBuffer (ref RenderTexture rt_, int bufferWidth_, int bufferHeight_) {
 			
-			rt_ = new RenderTexture (bufferWidth_, bufferHeight_, 0, RenderTextureFormat.ARGBHalf);
+			rt_ = new RenderTexture (bufferWidth_, bufferHeight_, 0, RenderTextureFormat.ARGBHalf, RenderTextureReadWrite.Linear);
 			rt_.filterMode = FilterMode.Bilinear;
 			rt_.wrapMode   = TextureWrapMode.Clamp;
 			rt_.hideFlags  = HideFlags.DontSave;
 			rt_.Create ();
-			Graphics.SetRenderTarget (rt_);
+			RenderTexture.active = rt_;
 			GL.Clear (false, true, new Color (0,0,0,0));
-			Graphics.SetRenderTarget (null);
+			RenderTexture.active = null;
 		}
 		
 		void _resetBuffer (ref RenderTexture[] rt_) {
 			
-			Graphics.SetRenderTarget (rt_ [0]);
+			RenderTexture.active = rt_ [0];
 			GL.Clear (false, true, Color.black);
-			Graphics.SetRenderTarget (null);
+			RenderTexture.active = null;
 			
-			Graphics.SetRenderTarget (rt_ [1]);
+			RenderTexture.active = rt_ [1];
 			GL.Clear (false, true, Color.black);
-			Graphics.SetRenderTarget (null);
+			RenderTexture.active = null;
 			
 		}
 		
 		void _resetBuffer (ref RenderTexture rt_) {
 			
-			Graphics.SetRenderTarget (rt_);
+			RenderTexture.active = rt_;
 			GL.Clear (false, true, Color.black);
-			Graphics.SetRenderTarget (null);
+			RenderTexture.active = null;
 			
 		}
 		
